@@ -1,0 +1,4 @@
+name: fhooe/projekt25
+label: 'Projekt25'
+dependencies:
+  - bootstrap-package/full
