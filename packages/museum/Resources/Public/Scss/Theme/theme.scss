@@ -16,6 +16,19 @@
 @import "formular";
 @import "impressum";
 @import "datenschutz";
+@import "startenglisch";
+@import "überenglisch";
+@import "infoenglisch";
+@import "ausstellungenglisch";
+@import "Galerieenglisch";
+@import "kontaktenglisch";
+@import "formularenglisch";
+@import "aboenglisch";
+@import "eventdetailenglisch";
+@import "kontaktenglisch";
+@import "newsdetailenglisch";
+@import "newsenglisch";
+
 
 
 
@@ -345,10 +358,7 @@
     }
   }
 
-  /* TYPO3 Meta-Zeug unten ausblenden */
-  .footer-section-meta {
-    display: none;
-  }
+
 }
 
 /* -----------------------------------------

@@ -1,0 +1,470 @@
+/* =========================================================
+   INFO & VISIT EN – kantig / schwarz-weiß / Rahmen
+   gleich wie deutsche Seite
+   Navbar und Footer bleiben unberührt
+   ========================================================= */
+
+body.page-30 {
+  #page-content {
+    background: #ffffff;
+    color: #111111;
+    padding-bottom: 5rem;
+  }
+
+  /* ---------------------------------
+     Grundlayout
+     --------------------------------- */
+  #page-content > .section,
+  #page-content > .contentcontainer,
+  #page-content > .frame {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #page-content .frame {
+    margin-bottom: 0;
+  }
+
+  #page-content .frame-container,
+  #page-content .frame-inner,
+  #page-content .frame-group-container,
+  #page-content .frame-group-inner {
+    background: transparent;
+  }
+
+  /* ---------------------------------
+     Typografie
+     --------------------------------- */
+  #page-content p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  #page-content .frame-header {
+    margin-bottom: 1.3rem;
+  }
+
+  #page-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #page-content figure.image {
+    margin: 0;
+  }
+
+  /* ---------------------------------
+     Hero-Bild
+     --------------------------------- */
+  #c331 {
+    margin-bottom: 4rem;
+  }
+
+  #c331 .frame-container {
+    padding: 0;
+  }
+
+  #c331 figure.image {
+    border: 3px solid #000000;
+  }
+
+  #c331 img {
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+  }
+
+  /* ---------------------------------
+     Opening hours
+     --------------------------------- */
+  #c332 {
+    margin-bottom: 2rem;
+  }
+
+  #c332 .frame-container {
+    border: 3px solid #000000;
+    background: #ffffff;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  #c332 .frame-header {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  #c332 p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  /* ---------------------------------
+     Ticket infos / Location
+     OHNE Rahmen
+     --------------------------------- */
+  #c333,
+  #c342 {
+    margin-bottom: 2rem;
+  }
+
+  #c333 .frame-container,
+  #c342 .frame-container {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  /* ---------------------------------
+     Ticketkarten – 4 gleich große Elemente
+     --------------------------------- */
+  #page-content .contentcontainer[data-container-identifier="container_4_columns"] {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: stretch;
+  }
+
+  #page-content .contentcontainer[data-container-identifier="container_4_columns"] .contentcontainer-column {
+    min-width: 0;
+    display: flex;
+  }
+
+  #c335,
+  #c336,
+  #c337,
+  #c338 {
+    width: 100%;
+    height: 100%;
+  }
+
+  #c335 .frame-group-container,
+  #c336 .frame-group-container,
+  #c337 .frame-group-container,
+  #c338 .frame-group-container,
+  #c335 .frame-group-inner,
+  #c336 .frame-group-inner,
+  #c337 .frame-group-inner,
+  #c338 .frame-group-inner,
+  #c335 .frame-container,
+  #c336 .frame-container,
+  #c337 .frame-container,
+  #c338 .frame-container,
+  #c335 .frame-inner,
+  #c336 .frame-inner,
+  #c337 .frame-inner,
+  #c338 .frame-inner {
+    height: 100%;
+  }
+
+  #c335 .frame-container,
+  #c336 .frame-container,
+  #c337 .frame-container,
+  #c338 .frame-container {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    align-items: stretch;
+  }
+
+  #c335 .frame-inner,
+  #c336 .frame-inner,
+  #c337 .frame-inner,
+  #c338 .frame-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #c335 p,
+  #c336 p,
+  #c337 p,
+  #c338 p {
+    margin-bottom: 0.7rem;
+  }
+
+  #c335 p:first-child,
+  #c336 p:first-child,
+  #c337 p:first-child,
+  #c338 p:first-child {
+    font-size: 1.15rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.9rem;
+    color: #000000;
+  }
+
+  #c335 p:nth-child(2),
+  #c336 p:nth-child(2),
+  #c337 p:nth-child(2),
+  #c338 p:nth-child(2) {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+    color: #000000;
+  }
+
+  #c335 p:last-child,
+  #c336 p:last-child,
+  #c337 p:last-child,
+  #c338 p:last-child {
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+
+  /* ---------------------------------
+     6 Punkte in EINEM großen Rahmen
+     --------------------------------- */
+  #page-content .contentcontainer[data-container-identifier="container_2_columns"] {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 1.5rem;
+  }
+
+  #page-content .contentcontainer[data-container-identifier="container_2_columns"] .contentcontainer-column {
+    min-width: 0;
+  }
+
+  #c341 .frame-container,
+  #c340 .frame-container {
+    border: none;
+    background: transparent;
+    padding: 0;
+    height: 100%;
+  }
+
+  #c341 ul.list,
+  #c340 ul.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #c341 ul.list li,
+  #c340 ul.list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.65;
+    color: #1a1a1a;
+  }
+
+  #c341 ul.list li:last-child,
+  #c340 ul.list li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Linke Liste */
+  #c341 ul.list li:nth-child(1)::before {
+    content: "\f29a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+  }
+
+  #c341 ul.list li:nth-child(2)::before {
+    content: "\f1eb";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+  }
+
+  #c341 ul.list li:nth-child(3)::before {
+    content: "\f030";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+  }
+
+  /* Rechte Liste */
+  #c340 ul.list li:nth-child(1)::before {
+    content: "\f07b";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+  }
+
+  #c340 ul.list li:nth-child(2)::before {
+    content: "\f07a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+  }
+
+  #c340 ul.list li:nth-child(3)::before {
+    content: "\f7bd";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0.05rem;
+  }
+
+  /* ---------------------------------
+     CTA / Links unten – nebeneinander
+     --------------------------------- */
+  #c343 {
+    margin-top: 0.5rem;
+  }
+
+  #c343 .frame-container {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 1.5rem;
+  }
+
+  #c343 .frame-inner {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+
+  #c343 p {
+    margin: 0;
+    flex: 1 1 0;
+  }
+
+  #c343 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 58px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 2px solid #000000;
+    padding: 0.75rem 1rem;
+    background: #ffffff;
+    text-align: center;
+    transition: none;
+  }
+
+  #c343 a:hover,
+  #c343 a:focus {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /* ---------------------------------
+     section selbst
+     --------------------------------- */
+  #page-content .section.section-default {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* ---------------------------------
+     Responsive
+     --------------------------------- */
+  @media (max-width: 1199.98px) {
+    #page-content .contentcontainer[data-container-identifier="container_4_columns"] {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    #page-content {
+      padding-bottom: 3rem;
+    }
+
+    #c331 {
+      margin-bottom: 3rem;
+    }
+
+    #c331 img {
+      aspect-ratio: 16 / 9;
+    }
+
+    #c332 .frame-container {
+      padding: 1.5rem 1.25rem;
+    }
+
+    #page-content .contentcontainer[data-container-identifier="container_2_columns"] {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 1.25rem;
+    }
+
+    #c343 .frame-inner {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    #page-content .contentcontainer[data-container-identifier="container_4_columns"] {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    #c335 .frame-container,
+    #c336 .frame-container,
+    #c337 .frame-container,
+    #c338 .frame-container {
+      padding: 1.25rem 1rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #page-content p {
+      font-size: 0.96rem;
+      line-height: 1.65;
+    }
+
+    #c332 p {
+      font-size: 1rem;
+    }
+  }
+}
+
+body.page-30 {
+  #c332 .frame-header,
+  #c333 .frame-header,
+  #c342 .frame-header {
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+
+  #c332 .element-header,
+  #c333 .element-header,
+  #c342 .element-header {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.45rem 1rem 0.3rem;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    font-size: clamp(1.5rem, 2.6vw, 2.3rem);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,529 @@
+/* =========================================================
+   CONTACT EN – kantig / schwarz-weiß / editorial
+   gleich wie deutsche Kontakt-Seite
+   Navbar und Footer bleiben unberührt
+   ========================================================= */
+
+body.page-29 {
+
+  #page-content {
+    background: #ffffff;
+    color: #111111;
+    padding-bottom: 5rem;
+  }
+
+  /* =========================================
+     Grundlayout
+     ========================================= */
+  #page-content > .section,
+  #page-content > .contentcontainer,
+  #page-content > .frame {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #page-content .section.section-default {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #page-content .frame,
+  #page-content .frame-group-container,
+  #page-content .frame-group-inner,
+  #page-content .frame-container,
+  #page-content .frame-inner {
+    background: transparent;
+  }
+
+  #page-content p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  #page-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  #page-content h2,
+  #page-content h3,
+  #page-content .element-header {
+    margin: 0;
+
+  }
+
+  #page-content h2,
+  #page-content .element-header {
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 800;
+  }
+
+  #page-content h3 {
+    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 800;
+  }
+
+  #page-content a {
+    color: #000000;
+  }
+
+  #page-content a:hover,
+  #page-content a:focus {
+  }
+
+  #page-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* =========================================
+     KONTAKT INTRO – gestylt aber OHNE Rahmen
+     ========================================= */
+  #c391 {
+    margin-bottom: 3rem;
+  }
+
+  #c391 .frame-container {
+    padding: 0;
+    border: none;
+    background: transparent;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #c391 h3 {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 3px solid #000000;
+  }
+
+  #c391 p {
+    text-align: center;
+    color: #2c2c2c;
+    line-height: 1.8;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #c391 hr {
+    width: 110px;
+    margin: 1.8rem auto;
+    border: none;
+    border-top: 2px solid #000000;
+    opacity: 1;
+  }
+
+  /* =========================================
+     KONTAKT CARDS – größer, breiter, mittig
+     ========================================= */
+  #c392 {
+    margin-bottom: 3.5rem;
+  }
+
+  #c392 .frame-container {
+    padding: 0;
+  }
+
+  #c392 .frame-inner {
+    width: 100%;
+  }
+
+  #c392 .card-group-element {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+  }
+
+  #c392 .card-group-element-item {
+    flex: 0 1 540px;
+    max-width: 540px;
+    width: 100%;
+    min-width: 0;
+    display: flex;
+  }
+
+  #c392 .card {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    border-radius: 0;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #c392 .card-img-top {
+    border-bottom: 2px solid #000000;
+    overflow: hidden;
+  }
+
+  #c392 .card-img-top img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+  }
+
+  #c392 .card-body {
+    padding: 1.7rem 1.5rem 1.45rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+  }
+
+  #c392 .card-title {
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+    line-height: 1.15;
+    margin-bottom: 0.35rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 2px solid #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 800;
+    color: #000000;
+  }
+
+  #c392 .card-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #555555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+
+  #c392 .card-body p {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 1199.98px) {
+    #c392 .card-group-element {
+      gap: 1.75rem;
+      max-width: 1180px;
+    }
+
+    #c392 .card-group-element-item {
+      flex: 0 1 500px;
+      max-width: 500px;
+    }
+
+    #c392 .card-img-top img {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    #c392 .card-group-element {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    #c392 .card-group-element-item {
+      flex: 0 1 auto;
+      max-width: 640px;
+    }
+
+    #c392 .card-img-top img {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #c392 .card-group-element {
+      padding: 0;
+    }
+
+    #c392 .card-group-element-item {
+      max-width: 100%;
+    }
+
+    #c392 .card-img-top img {
+      height: 240px;
+    }
+
+    #c392 .card-body {
+      padding: 1.2rem 1rem 1rem;
+    }
+  }
+
+  /* =========================================
+     DIREKT KONTAKT AUFNEHMEN – zentriert
+     ========================================= */
+  #c393 {
+    margin-bottom: 3rem;
+  }
+
+  #c393 .frame-container {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  #c393 .frame-header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #c393 .element-header {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.4rem 0.9rem;
+    border: 2px solid #000000;
+  }
+
+  #c393 p {
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  #c393 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.85rem 1.2rem;
+    border: 2px solid #000000;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    min-height: 52px;
+  }
+
+  #c393 a:hover,
+  #c393 a:focus {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /* =========================================
+     FAQ HEADER
+     ========================================= */
+  #c394 {
+    margin-bottom: 1.25rem;
+  }
+
+  #c394 .frame-header {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  #c394 .element-header {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.4rem 0.9rem;
+    border: 2px solid #000000;
+  }
+
+  /* =========================================
+     FAQ ACCORDION
+     ========================================= */
+  #c395 {
+    margin-bottom: 2rem;
+  }
+
+  #c395 .frame-container {
+    padding: 0;
+  }
+
+  #c395 .accordion {
+    max-width: 980px;
+    margin: 0 auto;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-inner-border-radius: 0;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: #ffffff;
+    --bs-accordion-bg: #ffffff;
+    --bs-accordion-btn-bg: #ffffff;
+    --bs-accordion-btn-color: #000000;
+    --bs-accordion-active-color: #000000;
+  }
+
+  #c395 .accordion-item {
+    border: 2px solid #000000;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  #c395 .accordion-item:last-child {
+    margin-bottom: 0;
+  }
+
+  #c395 .accordion-button {
+    background: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    padding: 1rem 1.15rem;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.45;
+  }
+
+  #c395 .accordion-button:not(.collapsed) {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  #c395 .accordion-button::after {
+    filter: grayscale(1) contrast(10);
+  }
+
+  #c395 .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+  }
+
+  #c395 .accordion-collapse {
+    border-top: 2px solid #000000;
+  }
+
+  #c395 .accordion-body {
+    padding: 1.1rem 1.15rem;
+    background: #ffffff;
+  }
+
+  #c395 .accordion-body p {
+    margin-bottom: 0;
+    line-height: 1.75;
+  }
+
+  /* =========================================
+     Responsive
+     ========================================= */
+  @media (max-width: 1199.98px) {
+    #c392 .card-group-element {
+      grid-template-columns: repeat(2, minmax(360px, 1fr));
+      max-width: 1000px;
+      gap: 1.75rem;
+    }
+
+    #c392 .card-img-top img {
+      height: 290px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    #page-content {
+      padding-bottom: 3rem;
+    }
+
+    #c391 .frame-container {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+
+    #c392 .card-group-element {
+      grid-template-columns: 1fr;
+      max-width: 640px;
+      gap: 1.5rem;
+    }
+
+    #c392 .card-img-top img {
+      height: 300px;
+    }
+
+    #c393 .frame-container {
+      margin: 0 1rem;
+      max-width: none;
+    }
+
+    #c395 .accordion {
+      margin: 0 1rem;
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #page-content p {
+      font-size: 0.96rem;
+      line-height: 1.65;
+    }
+
+    #c391 h3 {
+      font-size: 1.55rem;
+    }
+
+    #c392 .card-group-element {
+      grid-template-columns: 1fr;
+      max-width: none;
+    }
+
+    #c392 .card-img-top img {
+      height: 240px;
+    }
+
+    #c392 .card-body {
+      padding: 1.2rem 1rem 1rem;
+    }
+
+    #c393 .frame-container {
+      padding: 1.2rem 1rem;
+    }
+
+    #c393 a {
+      width: 100%;
+    }
+
+    #c395 .accordion-button {
+      padding: 0.95rem 1rem;
+    }
+
+    #c395 .accordion-body {
+      padding: 1rem;
+    }
+  }
+}
+
+body.page-29 {
+  #c391 .frame-inner > h3 {
+    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 800;
+
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.35rem 0.75rem 0.2rem;
+    border: 2px solid #000000;
+    margin-bottom: 1.25rem;
+  }
+}

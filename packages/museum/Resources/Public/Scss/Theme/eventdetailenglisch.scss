@@ -1,3 +1,11 @@
+/* =========================================================
+   EVENT DETAIL PAGES – gemeinsames SCSS für beide Detailseiten
+   Stil: kantig / schwarz-weiß / klare Rahmen
+   Gilt für:
+   - englische Event-Detailseiten auf page-37
+   Navbar und Footer bleiben unberührt
+   ========================================================= */
+
 body.page-37 {
   #page-content {
     background: #ffffff;
@@ -5,6 +13,9 @@ body.page-37 {
     padding-bottom: 5rem;
   }
 
+  /* ---------------------------------
+     Grundlayout
+     --------------------------------- */
   #page-content > .section,
   #page-content > .contentcontainer,
   #page-content > .frame {
@@ -29,6 +40,9 @@ body.page-37 {
     background: transparent;
   }
 
+  /* ---------------------------------
+     Allgemeine Typografie
+     --------------------------------- */
   #page-content p {
     font-size: 1rem;
     line-height: 1.75;
@@ -72,21 +86,27 @@ body.page-37 {
     color: #000000;
   }
 
-  #c190 {
+  /* ---------------------------------
+     Haupt-Wrapper
+     --------------------------------- */
+  #c356 {
     margin-bottom: 2rem;
   }
 
-  #c190 .frame-container {
+  #c356 .frame-container {
     border: 2px solid #000000;
     background: #ffffff;
     padding: 2rem;
   }
 
-  #c190 .tx-sf-event-mgt {
+  #c356 .tx-sf-event-mgt {
     width: 100%;
   }
 
-  #c190 .tx-sf-event-mgt > h1 {
+  /* ---------------------------------
+     Oberer Titelblock "Event details"
+     --------------------------------- */
+  #c356 .tx-sf-event-mgt > h1 {
     display: inline-block;
     background: #000000;
     color: #ffffff;
@@ -95,28 +115,32 @@ body.page-37 {
     margin-bottom: 1.5rem;
   }
 
-  #c190 .event-detail-row:first-of-type {
+  /* ---------------------------------
+     Eventtitel-Zeile
+     --------------------------------- */
+  #c356 .event-detail-row:first-of-type {
     display: block;
     padding: 0 0 1.15rem 0;
     margin-bottom: 1.2rem;
     border-bottom: 3px solid #000000;
   }
 
-  #c190 .event-title {
+  #c356 .event-title {
     width: 100%;
     font-size: clamp(1.05rem, 1.45vw, 1.45rem);
     line-height: 1.15;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     font-weight: 800;
-
-    /* wichtig: NICHT umbrechen */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  #c190 .event-detail-row {
+  /* ---------------------------------
+     Detail-Zeilen
+     --------------------------------- */
+  #c356 .event-detail-row {
     display: grid;
     grid-template-columns: 190px minmax(0, 1fr);
     gap: 1rem;
@@ -125,117 +149,132 @@ body.page-37 {
     border-bottom: 1px solid #d9d9d9;
   }
 
-  #c190 .event-detail-row:last-of-type {
+  #c356 .event-detail-row:last-of-type {
     border-bottom: none;
   }
 
-  #c190 .event-detail-label {
+  #c356 .event-detail-label {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #000000;
   }
 
-  #c190 .event-detail-value {
+  #c356 .event-detail-value {
     min-width: 0;
     color: #1a1a1a;
   }
 
-  #c190 .event-detail-value p:last-child {
+  #c356 .event-detail-value p:last-child {
     margin-bottom: 0;
   }
 
-  #c190 .clear {
+  #c356 .clear {
     display: none;
   }
 
-  #c190 .event-teaser {
+  /* ---------------------------------
+     Inhaltliche Priorisierung
+     --------------------------------- */
+  #c356 .event-teaser {
     font-size: 1.03rem;
     line-height: 1.8;
   }
 
-  #c190 .event-description {
+  #c356 .event-description {
     line-height: 1.75;
   }
 
-  #c190 .event-startdate,
-  #c190 .event-enddate,
-  #c190 .event-price,
-  #c190 .event-link {
+  #c356 .event-startdate,
+  #c356 .event-enddate,
+  #c356 .event-price,
+  #c356 .event-link {
     font-weight: 700;
   }
 
-  #c190 .event-detail-value:empty {
+  /* ---------------------------------
+     Leere Werte optisch aufräumen
+     --------------------------------- */
+  #c356 .event-detail-value:empty {
     min-height: 0;
   }
 
-  #c190 .event-detail-row:has(.event-location-title) {
+  /* ---------------------------------
+     Unnötige Felder ausblenden
+     --------------------------------- */
+  #c356 .event-detail-row:has(.event-location-title) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-location-address) {
+  #c356 .event-detail-row:has(.event-location-address) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-location-city) {
+  #c356 .event-detail-row:has(.event-location-city) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-location-country) {
+  #c356 .event-detail-row:has(.event-location-country) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-organisator) {
+  #c356 .event-detail-row:has(.event-organisator) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-maxParticipants) {
+  #c356 .event-detail-row:has(.event-maxParticipants) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-registrations) {
+  #c356 .event-detail-row:has(.event-registrations) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-freePlaces) {
+  #c356 .event-detail-row:has(.event-freePlaces) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-link) {
+  #c356 .event-detail-row:has(.event-link) {
     display: none;
   }
 
-  /* leere Description-Zeile ausblenden */
-  #c190 .event-detail-row:has(.event-description:empty) {
+  #c356 .event-detail-row:has(.event-description:empty) {
     display: none;
   }
 
-  /* leere Top-event-Zeile ausblenden
-     (im HTML hängt dort ebenfalls .event-price dran) */
-  #c190 .event-detail-row:has(.event-detail-value.event-price:empty) {
+  #c356 .event-detail-row:has(.event-detail-value.event-price:empty) {
     display: none;
   }
 
-  #c190 .event-detail-row:has(.event-price:not(:empty)) {
+  /* ---------------------------------
+     Preiszeile hervorheben
+     --------------------------------- */
+  #c356 .event-detail-row:has(.event-price:not(:empty)) {
     border-top: 2px solid #000000;
     margin-top: 0.35rem;
     padding-top: 1rem;
   }
 
-  #c190 .event-detail-row:has(.event-price:not(:empty)) .event-detail-label {
+  #c356 .event-detail-row:has(.event-price:not(:empty)) .event-detail-label {
     font-size: 0.95rem;
   }
 
-  #c190 .event-detail-row:has(.event-price:not(:empty)) .event-price {
+  #c356 .event-detail-row:has(.event-price:not(:empty)) .event-price {
     font-size: 1.15rem;
     font-weight: 800;
   }
 
-  #c190 .event-link {
+  /* ---------------------------------
+     Link-Zeile
+     --------------------------------- */
+  #c356 .event-link {
     display: inline-block;
   }
 
-  #c190 a.button {
+  /* ---------------------------------
+     Buttons allgemein
+     --------------------------------- */
+  #c356 a.button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -252,29 +291,35 @@ body.page-37 {
     transition: none;
   }
 
-  #c190 a.button:hover,
-  #c190 a.button:focus {
+  #c356 a.button:hover,
+  #c356 a.button:focus {
     background: #000000;
     color: #ffffff;
     text-decoration: none;
   }
 
-  #c190 .tx-sf-event-mgt > a.button {
+  /* ---------------------------------
+     Back-to-list Button
+     --------------------------------- */
+  #c356 .tx-sf-event-mgt > a.button {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
-  #c190 .tx-sf-event-mgt > div:last-child {
+  /* ---------------------------------
+     Add to calendar Bereich
+     --------------------------------- */
+  #c356 .tx-sf-event-mgt > div:last-child {
     border-top: 2px solid #000000;
     padding-top: 1.4rem;
     margin-top: 0.5rem;
   }
 
-  #c190 .tx-sf-event-mgt > div:last-child br {
+  #c356 .tx-sf-event-mgt > div:last-child br {
     display: none;
   }
 
-  #c190 .tx-sf-event-mgt > div:last-child strong {
+  #c356 .tx-sf-event-mgt > div:last-child strong {
     display: inline-block;
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -283,7 +328,7 @@ body.page-37 {
     color: #000000;
   }
 
-  #c190 .tx-sf-event-mgt > div:last-child ul {
+  #c356 .tx-sf-event-mgt > div:last-child ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -292,11 +337,11 @@ body.page-37 {
     gap: 0.85rem;
   }
 
-  #c190 .tx-sf-event-mgt > div:last-child li {
+  #c356 .tx-sf-event-mgt > div:last-child li {
     margin: 0;
   }
 
-  #c190 .tx-sf-event-mgt > div:last-child li a {
+  #c356 .tx-sf-event-mgt > div:last-child li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,50 +358,56 @@ body.page-37 {
     letter-spacing: 0.04em;
   }
 
-  #c190 .tx-sf-event-mgt > div:last-child li a:hover,
-  #c190 .tx-sf-event-mgt > div:last-child li a:focus {
+  #c356 .tx-sf-event-mgt > div:last-child li a:hover,
+  #c356 .tx-sf-event-mgt > div:last-child li a:focus {
     background: #000000;
     color: #ffffff;
     text-decoration: none;
   }
 
-  #c190 .event-detail-row:has(.event-teaser) {
+  /* ---------------------------------
+     Optische Feinheiten
+     --------------------------------- */
+  #c356 .event-detail-row:has(.event-teaser) {
     padding-top: 0;
   }
 
-  #c190 .event-detail-row:has(.event-description:not(:empty)) {
+  #c356 .event-detail-row:has(.event-description:not(:empty)) {
     background: transparent;
   }
 
-  #c190 .event-detail-row:has(.event-startdate),
-  #c190 .event-detail-row:has(.event-enddate) {
+  #c356 .event-detail-row:has(.event-startdate),
+  #c356 .event-detail-row:has(.event-enddate) {
     background: transparent;
   }
 
+  /* ---------------------------------
+     Responsive
+     --------------------------------- */
   @media (max-width: 991.98px) {
     #page-content {
       padding-bottom: 3rem;
     }
 
-    #c190 .frame-container {
+    #c356 .frame-container {
       padding: 1.4rem 1.2rem;
     }
 
-    #c190 .event-detail-row {
+    #c356 .event-detail-row {
       grid-template-columns: 1fr;
       gap: 0.35rem;
       padding: 0.8rem 0;
     }
 
-    #c190 .event-detail-label {
+    #c356 .event-detail-label {
       margin-bottom: 0.1rem;
     }
 
-    #c190 .tx-sf-event-mgt > div:last-child ul {
+    #c356 .tx-sf-event-mgt > div:last-child ul {
       grid-template-columns: 1fr;
     }
 
-    #c190 .event-title {
+    #c356 .event-title {
       font-size: clamp(0.98rem, 2.5vw, 1.2rem);
       letter-spacing: 0.02em;
     }
@@ -368,16 +419,16 @@ body.page-37 {
       line-height: 1.65;
     }
 
-    #c190 .frame-container {
+    #c356 .frame-container {
       padding: 1rem;
     }
 
-    #c190 a.button,
-    #c190 .tx-sf-event-mgt > div:last-child li a {
+    #c356 a.button,
+    #c356 .tx-sf-event-mgt > div:last-child li a {
       width: 100%;
     }
 
-    #c190 .event-title {
+    #c356 .event-title {
       font-size: 0.95rem;
       letter-spacing: 0.01em;
     }

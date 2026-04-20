@@ -1,0 +1,98 @@
+/* =========================================================
+   NEWS DETAIL PAGE EN
+   aktuell passend für die vorhandene Struktur
+   Hinweis: In diesem HTML fehlt der eigentliche News-Detail-Content
+   Navbar und Footer bleiben unberührt
+   ========================================================= */
+
+body.page-39 {
+  #page-content {
+    background: #ffffff;
+    color: #111111;
+    padding: 2.5rem 0 5rem;
+  }
+
+  /* ---------------------------------
+     Grundlayout
+     --------------------------------- */
+  #page-content > .section,
+  #page-content > .contentcontainer,
+  #page-content > .frame {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #page-content .section.section-default {
+    min-height: 420px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /* ---------------------------------
+     Platzhalter-Optik für leere Detailseite
+     --------------------------------- */
+  #page-content .section.section-default::before {
+    content: "NEWS DETAIL";
+    display: inline-block;
+    margin-top: 2rem;
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    padding: 0.45rem 1rem 0.3rem;
+    font-size: clamp(1.5rem, 2.6vw, 2.3rem);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* ---------------------------------
+     Falls später echter Content geladen wird
+     --------------------------------- */
+  #page-content p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  #page-content h1,
+  #page-content h2,
+  #page-content h3 {
+    margin: 0;
+    color: #000000;
+  }
+
+  #page-content a {
+    color: #000000;
+  }
+
+  #page-content a:hover,
+  #page-content a:focus {
+    color: #000000;
+  }
+
+  /* ---------------------------------
+     Responsive
+     --------------------------------- */
+  @media (max-width: 991.98px) {
+    #page-content {
+      padding: 2rem 0 3rem;
+    }
+
+    #page-content .section.section-default {
+      min-height: 320px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #page-content .section.section-default::before {
+      font-size: 1.3rem;
+      padding: 0.35rem 0.8rem 0.25rem;
+    }
+  }
+}

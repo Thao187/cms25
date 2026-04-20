@@ -1,0 +1,372 @@
+/* =========================================================
+   ABOUT US EN – soll optisch exakt wie die deutsche
+   ÜBER-UNS-Seite aussehen
+   ID-unabhängig, damit es auch mit anderer EN-Struktur klappt
+   ========================================================= */
+
+body.page-25 {
+  #page-content {
+    background: #ffffff;
+    color: #111111;
+    padding-bottom: 5rem;
+  }
+
+  /* ---------------------------------
+     Grundlayout
+     --------------------------------- */
+  #page-content > .section,
+  #page-content > .contentcontainer,
+  #page-content > .frame {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---------------------------------
+     Typografie
+     --------------------------------- */
+  #page-content p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  #page-content h2,
+  #page-content .element-header {
+    font-size: clamp(1.7rem, 3vw, 2.6rem);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 800;
+    margin: 0;
+    color: #000;
+  }
+
+  #page-content .frame-header {
+    margin-bottom: 1.4rem;
+  }
+
+  /* ---------------------------------
+     Bilder farbig lassen
+     --------------------------------- */
+  #page-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: none !important;
+  }
+
+  #page-content figure.image {
+    margin: 0;
+  }
+
+  /* ---------------------------------
+     Hero oben
+     erstes Bild-Element auf der Seite
+     --------------------------------- */
+  #page-content > .frame-type-image:first-of-type {
+    margin-bottom: 4rem;
+  }
+
+  #page-content > .frame-type-image:first-of-type img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* ---------------------------------
+     erster Titel ("About us")
+     --------------------------------- */
+  #page-content > .section.section-default > .frame-type-text:first-child .frame-header {
+    text-align: center;
+  }
+
+  #page-content > .section.section-default > .frame-type-text:first-child .element-header {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 0.6rem 1.1rem;
+    border: 2px solid #000;
+    margin: 0 auto;
+  }
+
+  /* ---------------------------------
+     Intro-Boxen unter dem Seitentitel
+     entspricht DE: Museum + Entstehungsgeschichte
+     --------------------------------- */
+  #page-content > .section.section-default > .frame-type-text:nth-child(2) .frame-container,
+  #page-content > .section.section-default > .frame-type-text:nth-child(3) .frame-container {
+    border: 2px solid #000;
+    padding: 2rem;
+    background: #fff;
+    margin-bottom: 2rem;
+  }
+
+  /* ---------------------------------
+     Bereichstitel
+     z. B. Collection / Team
+     --------------------------------- */
+  #page-content > .frame-type-text .element-header,
+  #page-content > .frame-type-text h2 {
+    word-break: break-word;
+  }
+
+  /* Titel direkt vor Sammlungsbereich */
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] {
+    margin-top: 0;
+  }
+
+  /* alle Haupt-Sectiontitel mit schwarzem Label */
+  #page-content > .frame-type-text:has(+ .contentcontainer[data-container-identifier="container_2_columns"]) {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #page-content > .frame-type-text:has(+ .contentcontainer[data-container-identifier="container_2_columns"]) .frame-container {
+    border-bottom: 4px solid #000;
+    padding-bottom: 0.5rem;
+  }
+
+  #page-content > .frame-type-text:has(+ .contentcontainer[data-container-identifier="container_2_columns"]) .element-header {
+    background: #000;
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    display: inline-block;
+    border: 2px solid #000;
+  }
+
+  /* ---------------------------------
+     allgemeines 2-Spalten-Layout
+     --------------------------------- */
+  .contentcontainer[data-container-identifier="container_2_columns"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ---------------------------------
+     SAMMLUNG / COLLECTION
+     großer Wrapper nach Sectiontitel
+     --------------------------------- */
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] > .contentcontainer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  > .contentcontainer-column
+  > .contentcontainer[data-container-identifier="container_2_columns"] {
+    display: grid;
+    grid-template-columns: 290px minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+    margin-bottom: 0;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  > .contentcontainer-column
+  > .contentcontainer[data-container-identifier="container_2_columns"]
+  > .contentcontainer-column {
+    display: flex;
+    min-width: 0;
+  }
+
+  /* Bildboxen in Collection */
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-image .frame-container {
+    border: 2px solid #000;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-image .frame-inner,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-image .gallery-row,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-image .gallery-item,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-image figure.image {
+    height: 100%;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Textboxen in Collection */
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-text .frame-container {
+    border: 2px solid #000;
+    padding: 1.5rem;
+    background: #fff;
+    width: 100%;
+    min-height: 320px;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-text .frame-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-text .element-header {
+    font-size: clamp(1.15rem, 1.8vw, 1.8rem);
+    line-height: 1.12;
+    letter-spacing: 0.04em;
+    margin: 0;
+    word-break: break-word;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-text .frame-header {
+    margin-bottom: 1rem;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+  .frame-type-text p {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+  }
+
+  /* ---------------------------------
+     TEAM
+     alle 2er-Blöcke nach dem nächsten Sectiontitel
+     --------------------------------- */
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text .frame-container {
+    border-bottom: 4px solid #000;
+    padding-bottom: 0.5rem;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text .element-header {
+    background: #000;
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    display: inline-block;
+    border: 2px solid #000;
+  }
+
+  /* Team-Zeilen */
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer + .contentcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: stretch;
+  }
+
+  /* Bilder im Team */
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer .frame-type-image .frame-container,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer .frame-type-image .frame-container,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer .frame-type-image .frame-container,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer + .contentcontainer .frame-type-image .frame-container {
+    border: 2px solid #000;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer .frame-type-image img,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer .frame-type-image img,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer .frame-type-image img,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer + .contentcontainer .frame-type-image img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  /* Text im Team */
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer .frame-type-text .frame-container,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer .frame-type-text .frame-container,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer .frame-type-text .frame-container,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer + .contentcontainer .frame-type-text .frame-container {
+    border: 2px solid #000;
+    padding: 1.7rem;
+    background: #fff;
+    height: 100%;
+  }
+
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer .frame-type-text .element-header,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer .frame-type-text .element-header,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer .frame-type-text .element-header,
+  #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer + .contentcontainer .frame-type-text .element-header {
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* ---------------------------------
+     Mobile
+     --------------------------------- */
+  @media (max-width: 991px) {
+    #page-content {
+      padding-bottom: 3rem;
+    }
+
+    #page-content > .frame-type-image:first-of-type img {
+      aspect-ratio: 16 / 9;
+    }
+
+    .contentcontainer[data-container-identifier="container_2_columns"] {
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+    }
+
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] > .contentcontainer-column {
+      gap: 1.5rem;
+    }
+
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+    > .contentcontainer-column
+    > .contentcontainer[data-container-identifier="container_2_columns"] {
+      grid-template-columns: 1fr;
+    }
+
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+    .frame-type-image img,
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"]
+    .frame-type-text .frame-container {
+      min-height: 0;
+    }
+
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer,
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer,
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer,
+    #page-content > .frame-type-text + .contentcontainer[data-container-identifier="container_2_columns"] + .frame-type-text + .contentcontainer + .contentcontainer + .contentcontainer + .contentcontainer {
+      grid-template-columns: 1fr;
+    }
+  }
+}
