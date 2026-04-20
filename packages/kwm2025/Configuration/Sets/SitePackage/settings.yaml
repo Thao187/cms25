@@ -26,3 +26,4 @@ page:
     layoutRootPath: 'EXT:kwm2025/Resources/Private/Layouts/Page/'
     partialRootPath: 'EXT:kwm2025/Resources/Private/Partials/Page/'
     templateRootPath: 'EXT:kwm2025/Resources/Private/Templates/Page/'
+

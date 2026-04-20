@@ -2,3 +2,32 @@ name: fhooe/kwm2025
 label: 'KWM 2025'
 dependencies:
   - bootstrap-package/full
+
+routeEnhancers:
+News:
+  type: Extbase
+  extension: News
+  plugin: Pi1
+  routes:
+    - routePath: '/'
+      _controller: 'News::list'
+    - routePath: '/page-{page}'
+      _controller: 'News::list'
+      _arguments:
+        page: 'currentPage'
+    - routePath: '/{news-title}'
+      _controller: 'News::detail'
+      _arguments:
+        news-title: news
+  defaultController: 'News::list'
+  defaults:
+    page: '1'
+  aspects:
+    news:
+      type: PersistedAliasMapper
+      tableName: tx_news_domain_model_news
+      routeFieldName: path_segment
+    page:
+      type: StaticRangeMapper
+      start: '1'
+      end: '100'
