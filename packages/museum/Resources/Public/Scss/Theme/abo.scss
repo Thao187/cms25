@@ -1,0 +1,430 @@
+/* =========================
+   ABONNENTENBEREICH / LOGIN
+   im Stil der restlichen Seiten
+   ========================= */
+
+body.page-43 {
+  main#page-content {
+    background: #ffffff !important;
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  #page-content > .section.section-default {
+    background: #ffffff !important;
+  }
+
+  /* =========================
+     GENERELLE BREITE / ABSTÄNDE
+     ========================= */
+  #page-content #c265,
+  #page-content #c223,
+  #page-content #c266,
+  #page-content #c241,
+  #page-content #c267,
+  #page-content .contentcontainer[data-container-identifier="container_3_columns"] {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #page-content #c265,
+  #page-content #c223,
+  #page-content #c266,
+  #page-content #c241,
+  #page-content #c267 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  #page-content .frame {
+    margin-bottom: 0 !important;
+  }
+
+  #page-content .frame-space-before-none,
+  #page-content .frame-space-after-none {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* =========================
+     ÜBERSCHRIFTEN WIE AUF DEN ANDEREN SEITEN
+     ========================= */
+  #page-content #c265 .frame-inner,
+  #page-content #c266 .frame-inner,
+  #page-content #c267 .frame-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #page-content #c265 .frame-header,
+  #page-content #c266 .frame-header,
+  #page-content #c267 .frame-header {
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  #page-content #c265 .element-header,
+  #page-content #c266 .element-header,
+  #page-content #c267 .element-header {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.45rem 1rem 0.3rem;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    font-size: clamp(1.5rem, 2.6vw, 2.3rem);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  #page-content #c265 p,
+  #page-content #c266 p,
+  #page-content #c267 p {
+    margin: 0.4rem auto 0;
+    max-width: 860px;
+    font-size: 1.04rem;
+    line-height: 1.72;
+    color: #222222;
+    text-align: center;
+  }
+
+  /* =========================
+     LOGIN / LOGOUT BOX
+     ========================= */
+  #page-content #c223 .frame-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2rem 2.2rem;
+    background: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: none;
+  }
+
+  #page-content #c223 h3 {
+    display: inline-block;
+    margin: 0 0 1.2rem;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.4rem 0.9rem 0.25rem;
+    border: 2px solid #000000;
+    font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  #page-content #c223 .frame-inner {
+    text-align: center;
+  }
+
+  #page-content #c223 .frame-inner > p {
+    display: none;
+  }
+
+  #page-content #c223 form {
+    margin: 0;
+  }
+
+  #page-content #c223 fieldset {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 1.5rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  #page-content #c223 legend {
+    display: none;
+  }
+
+  #page-content #c223 fieldset > div:first-of-type {
+    margin-bottom: 1.1rem;
+    font-size: 1.02rem;
+    color: #222222;
+  }
+
+  #page-content #c223 label {
+    display: inline-block;
+    margin-right: 0.45rem;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  #page-content #c223 input[type="submit"],
+  #page-content #c223 input[name="submit"],
+  #page-content #c223 #tx-felogin-input-logout {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+    border-radius: 0 !important;
+    padding: 0.8rem 1.8rem !important;
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  #page-content #c223 input[type="submit"]:hover,
+  #page-content #c223 input[name="submit"]:hover,
+  #page-content #c223 #tx-felogin-input-logout:hover {
+    background: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  #page-content #c223 .felogin-hidden {
+    display: none !important;
+  }
+
+  /* =========================
+     DOWNLOAD-BEREICH
+     ========================= */
+  #page-content #c241 .frame-inner {
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  #page-content .hscroll-downloads {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding-bottom: 0.85rem;
+    scrollbar-width: thin;
+    scrollbar-color: #8d8d8d #ececec;
+  }
+
+  #page-content .hscroll-downloads::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  #page-content .hscroll-downloads::-webkit-scrollbar-track {
+    background: #ececec;
+  }
+
+  #page-content .hscroll-downloads::-webkit-scrollbar-thumb {
+    background: #8d8d8d;
+    border: 2px solid #ececec;
+  }
+
+  #page-content .hscroll-downloads__track {
+    display: inline-flex;
+    gap: 1.2rem;
+    width: max-content;
+    min-width: 100%;
+  }
+
+  #page-content .hscroll-downloads__item {
+    flex: 0 0 285px;
+    width: 285px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: none;
+    padding: 0.9rem;
+    transition: transform 0.2s ease;
+  }
+
+  #page-content .hscroll-downloads__item:hover {
+    transform: translateY(-4px);
+  }
+
+  #page-content .hscroll-downloads__image {
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+    border: 2px solid #000000;
+  }
+
+  #page-content .hscroll-downloads__image img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+
+  #page-content .hscroll-downloads__title {
+    margin: 0 0 0.8rem;
+    font-size: 1.1rem;
+    line-height: 1.25;
+    font-weight: 800;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  #page-content .hscroll-downloads__button {
+    display: inline-block;
+    padding: 0.68rem 1.15rem;
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition: all 0.2s ease;
+  }
+
+  #page-content .hscroll-downloads__button:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  /* =========================
+     REVEAL-BILDER
+     ========================= */
+  #page-content .contentcontainer[data-container-identifier="container_3_columns"] {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  #page-content .contentcontainer[data-container-identifier="container_3_columns"] .contentcontainer-column {
+    min-width: 0;
+    display: flex;
+  }
+
+  #page-content #c232 .frame-inner,
+  #page-content #c275 .frame-inner,
+  #page-content #c273 .frame-inner {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    width: 100%;
+  }
+
+  #page-content .ce-aufdeckung {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #page-content .aufdeckung-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #000000;
+    border: 2px solid #000000;
+    box-shadow: none;
+  }
+
+  #page-content .aufdeckung-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #page-content .aufdeckung-overlay {
+    z-index: 2;
+  }
+
+  #page-content .aufdeckung-text {
+    display: flex !important;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: calc(100% - 2rem);
+    max-width: 300px;
+    padding: 0.8rem 0.95rem;
+    background: rgba(0, 0, 0, 0.78);
+    color: #ffffff;
+    border: 2px solid #000000;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    font-weight: 500;
+    white-space: pre-line;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* =========================
+     RESPONSIVE
+     ========================= */
+  @media (max-width: 991.98px) {
+    #page-content #c265 .element-header,
+    #page-content #c266 .element-header,
+    #page-content #c267 .element-header {
+      font-size: 1.9rem;
+    }
+
+    #page-content #c223 .frame-inner {
+      padding: 1.6rem;
+    }
+
+    #page-content .contentcontainer[data-container-identifier="container_3_columns"] {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #page-content .hscroll-downloads__item {
+      flex: 0 0 260px;
+      width: 260px;
+    }
+
+    #page-content .hscroll-downloads__image img {
+      height: 195px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    main#page-content {
+      padding: 1.6rem 0 2rem;
+    }
+
+    #page-content #c265 .element-header,
+    #page-content #c266 .element-header,
+    #page-content #c267 .element-header {
+      font-size: 1.6rem;
+    }
+
+    #page-content #c265 p,
+    #page-content #c266 p,
+    #page-content #c267 p {
+      font-size: 1rem;
+      line-height: 1.62;
+    }
+
+    #page-content #c223 h3 {
+      font-size: 1.45rem;
+    }
+
+    #page-content .contentcontainer[data-container-identifier="container_3_columns"] {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    #page-content .aufdeckung-text {
+      width: calc(100% - 1.4rem);
+      max-width: 280px;
+      font-size: 0.86rem;
+    }
+
+    #page-content .hscroll-downloads__item {
+      flex: 0 0 235px;
+      width: 235px;
+    }
+
+    #page-content .hscroll-downloads__image img {
+      height: 180px;
+    }
+  }
+}

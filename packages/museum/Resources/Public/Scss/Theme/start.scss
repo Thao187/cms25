@@ -1,0 +1,455 @@
+/* =====================================================
+   STARTSEITE MUSEUM LICHTBLICK
+   altes Layout beibehalten, nur leicht optimiert
+   Navbar und Footer bleiben in Ruhe
+   ===================================================== */
+
+/* -----------------------------
+   NUR Startseite
+----------------------------- */
+.page-24 {
+  background: #000;
+}
+
+/* gesamter Bereich von Header + Content mit Bild */
+.page-24 .body-bg {
+  position: relative;
+  background-image: url('../../Images/hermann-museum-398761_1920.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* helles Overlay über dem Bild */
+.page-24 .body-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(248, 246, 243, 0.7);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Header und Content über Overlay */
+.page-24 #page-header,
+.page-24 #page-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* -----------------------------
+   HEADER ins Bild integrieren
+----------------------------- */
+.page-24 #page-header {
+  background: transparent !important;
+  box-shadow: none;
+  padding-top: 1.25rem;
+}
+
+.page-24 #page-header .container-mainnavigation {
+  background: rgba(255, 255, 255, 0.84) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 1rem 1.25rem;
+}
+
+.page-24 .navbar-brand img {
+  height: auto;
+}
+
+.page-24 .navbar-nav {
+  gap: 0.35rem;
+}
+
+.page-24 .navbar-nav .nav-link {
+  background: #fff;
+  border: 1px solid #1b1b1b;
+  color: #111;
+  padding: 0.85rem 1.15rem;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.page-24 .navbar-nav .nav-link:hover,
+.page-24 .navbar-nav .nav-link:focus {
+  background: #111;
+  color: #fff;
+}
+
+.page-24 .navbar-nav .nav-link.active {
+  background: #fff;
+  color: #111;
+}
+
+/* -----------------------------
+   MAIN
+----------------------------- */
+.page-24 #page-content {
+  background: transparent !important;
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
+}
+
+/* alle inneren Wrapper transparent */
+.page-24 #page-content .section,
+.page-24 #page-content .section-default,
+.page-24 #page-content .frame,
+.page-24 #page-content .frame-group-container,
+.page-24 #page-content .frame-group-inner,
+.page-24 #page-content .frame-container,
+.page-24 #page-content .frame-inner {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* gemeinsamer Contentbereich */
+.page-24 #page-content > .frame-type-text,
+.page-24 #page-content > .section,
+.page-24 #page-content > .frame {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -----------------------------
+   Highlights Titel
+----------------------------- */
+.page-24 #c63 {
+  max-width: 1100px;
+  margin: 2rem auto 2.25rem auto;
+}
+
+.page-24 #c63 .frame-inner {
+  background: #ffffff !important;
+  border: 1px solid #1b1b1b;
+  padding: 1.7rem 2.2rem;
+  text-align: center;
+}
+
+.page-24 #c63 p {
+  display: inline-block;
+  margin: 0;
+  background: #000000;
+  color: #ffffff;
+  padding: 0.45rem 1rem 0.3rem;
+  border: 2px solid #000000;
+
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* -----------------------------
+   2-Spalten-Bereich
+----------------------------- */
+.page-24 .section.section-default {
+  max-width: 1100px;
+  margin: 0 auto 2.5rem auto;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.page-24 .section.section-default .contentcontainer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.88fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.page-24 .section.section-default .contentcontainer-column {
+  min-width: 0;
+}
+
+/* -----------------------------
+   Carousel
+----------------------------- */
+.page-24 #c71,
+.page-24 #c71 .frame-inner {
+  height: 100%;
+}
+
+.page-24 #carousel-71 {
+  position: relative;
+  overflow: hidden;
+  background: #10202b;
+  min-height: 100%;
+  border: 1px solid #1b1b1b;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.page-24 #carousel-71 .carousel-inner,
+.page-24 #carousel-71 .carousel-item,
+.page-24 #carousel-71 .carousel-content,
+.page-24 #carousel-71 .carousel-content-inner,
+.page-24 #carousel-71 .carousel-image {
+  height: 100%;
+}
+
+.page-24 #carousel-71 .carousel-image {
+  display: flex;
+}
+
+.page-24 #carousel-71 picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.page-24 #carousel-71 img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Pfeile */
+.page-24 #carousel-71 .carousel-control-prev,
+.page-24 #carousel-71 .carousel-control-next {
+  width: 3.6rem;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.page-24 #carousel-71 .carousel-control-prev:hover,
+.page-24 #carousel-71 .carousel-control-next:hover {
+  opacity: 0.82;
+}
+
+.page-24 #carousel-71 .carousel-control-icon,
+.page-24 #carousel-71 .carousel-control-prev-icon,
+.page-24 #carousel-71 .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Dots */
+.page-24 #carousel-71 .carousel-indicators {
+  margin-bottom: 1rem;
+  gap: 0.45rem;
+}
+
+.page-24 #carousel-71 .carousel-indicators button {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.58);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.page-24 #carousel-71 .carousel-indicators button.active {
+  background: #ffffff;
+}
+
+/* -----------------------------
+   Text rechts
+----------------------------- */
+.page-24 #c66,
+.page-24 #c66 .frame-inner {
+  height: 100%;
+}
+
+.page-24 #c66 .frame-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff !important;
+  border: 1px solid #1b1b1b;
+  padding: 2rem;
+}
+
+.page-24 #c66 .frame-header {
+  margin-bottom: 1rem;
+}
+
+.page-24 #c66 .element-header {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  line-height: 1.15;
+  color: #111;
+}
+
+.page-24 #c66 p {
+  margin-bottom: 0.95rem;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #2e2e2e;
+}
+
+.page-24 #c66 p:last-child {
+  margin-bottom: 0;
+}
+
+/* -----------------------------
+   Willkommen Block
+----------------------------- */
+.page-24 #c67 {
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+}
+
+.page-24 #c67 .frame-inner {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border: 1px solid #1b1b1b;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  padding: 2.4rem 2.8rem;
+}
+
+.page-24 #c67 .frame-header {
+  margin-bottom: 1.25rem;
+}
+
+.page-24 #c67 .element-header {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.55rem;
+  line-height: 1.1;
+  color: #111;
+}
+
+.page-24 #c67 p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #252525;
+}
+
+.page-24 #c67 p:last-child {
+  margin-bottom: 0;
+}
+
+/* unnötige <br> entschärfen */
+.page-24 #c67 br {
+  display: none;
+}
+
+/* -----------------------------
+   Footer NICHT verändern
+----------------------------- */
+.page-24 #page-footer {
+  position: relative;
+  z-index: 3;
+  background: #000;
+}
+
+/* -----------------------------
+   Responsive
+----------------------------- */
+@media (max-width: 991.98px) {
+  .page-24 .body-bg {
+    background-attachment: scroll;
+  }
+
+  .page-24 #page-header .container-mainnavigation {
+    padding: 0.9rem 1rem;
+  }
+
+  .page-24 #c63 {
+    margin: 1.5rem auto 1.75rem auto;
+  }
+
+  .page-24 #c63 p {
+    font-size: 2.1rem;
+  }
+
+  .page-24 .section.section-default {
+    padding: 1.25rem;
+  }
+
+  .page-24 .section.section-default .contentcontainer {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .page-24 #carousel-71 img {
+    min-height: 320px;
+  }
+
+  .page-24 #c66 .frame-inner,
+  .page-24 #c67 .frame-inner {
+    padding: 1.5rem;
+  }
+
+  .page-24 #c66 .element-header {
+    font-size: 1.7rem;
+  }
+
+  .page-24 #c67 .element-header {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-24 #page-content {
+    padding-top: 1.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .page-24 #c63 {
+    margin: 1rem auto 1.25rem auto;
+  }
+
+  .page-24 #c63 .frame-inner {
+    padding: 1.3rem;
+  }
+
+  .page-24 #c63 p {
+    font-size: 1.8rem;
+  }
+
+  .page-24 .section.section-default {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-24 #carousel-71 img {
+    min-height: 250px;
+  }
+
+  .page-24 #c66 .frame-inner,
+  .page-24 #c67 .frame-inner {
+    padding: 1.25rem;
+  }
+
+  .page-24 #c66 p,
+  .page-24 #c67 p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .page-24 #c67 .element-header {
+    font-size: 1.7rem;
+  }
+}
+
+/* =========================================
+   STARTSEITE: glasiger Header
+   ========================================= */
+
+.page-24 #page-header {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.page-24 #page-header.navbar,
+.page-24 .navbar-mainnavigation,
+.page-24 .navbar-default {
+  background: transparent !important;
+}
+
+.page-24 #page-header .container-mainnavigation {
+  background: rgba(255, 255, 255, 0.01) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: none !important;
+  padding: 1.6rem 1.25rem 1rem 1.25rem;
+}
+
+

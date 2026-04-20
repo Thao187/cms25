@@ -1,0 +1,237 @@
+/* =========================================================
+   NEWS-DETAIL – nur für diese Seite
+   Seite: page-39
+   Ziel: ruhiger, moderner, kantiger Editorial-Look
+   Wichtig: Navbar und Footer werden NICHT angerührt
+   ========================================================= */
+
+body.page-39 {
+  #page-content {
+    background: white;
+    padding: 4.5rem 0 5rem;
+    color: #1f1f1f;
+  }
+
+  /* Gesamtbereich */
+  #c218.frame-type-news_newsdetail {
+    margin: 0;
+  }
+
+  #c218 .frame-container,
+  #c218 .frame-inner,
+  #c218 .frame-group-container,
+  #c218 .frame-group-inner {
+    overflow: visible;
+  }
+
+  /* Artikelkarte */
+  .news.news-single {
+    max-width: 1180px;
+    margin: 0 auto;
+    border: black 1px solid;
+  }
+
+  .news.news-single .article {
+    background: #ffffff;
+    border: 1px solid white;
+    border-radius: 0;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+    padding: 3rem;
+  }
+
+  /* Titel */
+  .news.news-single h1 {
+    font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.2rem;
+    padding-bottom: 1rem !important;
+    border-bottom: 1px solid white !important;
+    max-width: 800px;
+  }
+
+  /* Datum / Meta */
+  .news.news-single .extra {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 2.2rem !important;
+    padding: 0.55rem 0.9rem;
+    background: white;
+    border: 1px solid white;
+    font-size: 0.92rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .news.news-single .extra i {
+    color: black;
+    font-size: 0.95rem;
+  }
+
+  .news.news-single .extra time {
+    font-weight: 500;
+  }
+
+  /* Layout Text + Bild */
+  .news.news-single .row {
+    align-items: start;
+    --bs-gutter-x: 2.5rem;
+    --bs-gutter-y: 2rem;
+  }
+
+  .news.news-single .col-md-8,
+  .news.news-single .col-md-4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Teaser */
+  .news.news-single .lead {
+    margin-bottom: 1.8rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+
+  .news.news-single .lead p {
+    font-size: 1.28rem;
+    line-height: 1.65;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+    max-width: 760px;
+  }
+
+  /* Fließtext */
+  .news.news-single .news-text-wrap {
+    margin-top: 0;
+    max-width: 760px;
+  }
+
+  .news.news-single .news-text-wrap p {
+    font-size: 1.04rem;
+    line-height: 1.9;
+    color: black;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Bildspalte */
+  .news.news-single .thumbnail {
+    margin: 0;
+    background: #ffffff;
+    border: 1px solid black;
+    box-shadow: none;
+  }
+
+  .news.news-single .thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  /* Optional etwas Abstand oben, damit Bild optisch besser sitzt */
+  .news.news-single .col-md-4 .thumbnail {
+    margin-top: 0.2rem;
+  }
+
+  /* Links im Artikel */
+  .news.news-single a {
+    color: #1f1f1f;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.35);
+    transition: border-color 0.2s ease, opacity 0.2s ease;
+  }
+
+  .news.news-single a:hover,
+  .news.news-single a:focus {
+    border-bottom-color: rgba(31, 31, 31, 0.8);
+    opacity: 0.9;
+  }
+
+  /* Desktop-Feinschliff */
+  @media (min-width: 992px) {
+    .news.news-single .article {
+      padding: 3.4rem;
+    }
+
+    .news.news-single .col-md-8 {
+      padding-right: 1rem;
+    }
+
+    .news.news-single .col-md-4 {
+      padding-left: 1rem;
+    }
+  }
+
+  /* Tablet */
+  @media (max-width: 991.98px) {
+    #page-content {
+      padding: 3.5rem 0 4rem;
+    }
+
+    .news.news-single .article {
+      padding: 2.2rem;
+    }
+
+    .news.news-single h1 {
+      margin-bottom: 1.2rem;
+      padding-bottom: 1rem !important;
+    }
+
+    .news.news-single .extra {
+      margin-bottom: 1.8rem !important;
+    }
+
+    .news.news-single .lead p {
+      font-size: 1.15rem;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 767.98px) {
+    #page-content {
+      padding: 2.5rem 0 3rem;
+    }
+
+    .news.news-single {
+      padding: 0 1rem;
+    }
+
+    .news.news-single .article {
+      padding: 1.4rem;
+    }
+
+    .news.news-single h1 {
+      font-size: 1.9rem;
+      line-height: 1.12;
+    }
+
+    .news.news-single .extra {
+      display: inline-flex;
+      width: auto;
+      max-width: 100%;
+      flex-wrap: wrap;
+      font-size: 0.82rem;
+      padding: 0.5rem 0.75rem;
+    }
+
+    .news.news-single .lead p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .news.news-single .news-text-wrap p {
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+
+    .news.news-single .thumbnail {
+      padding: 0.65rem;
+    }
+  }
+}

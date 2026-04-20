@@ -1,0 +1,653 @@
+/* =========================================================
+   AUSSTELLUNGEN – kantig / schwarz-weiß / Rahmen
+   Nur für diese Seite
+   Navbar und Footer bleiben unberührt
+   ========================================================= */
+
+body.page-31 {
+  #page-content {
+    background: #ffffff;
+    color: #111111;
+    padding-bottom: 5rem;
+  }
+
+  /* ---------------------------------
+     Grundlayout
+     --------------------------------- */
+  #page-content > .section,
+  #page-content > .contentcontainer,
+  #page-content > .frame {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #page-content .frame {
+    margin-bottom: 0;
+  }
+
+  #page-content .frame-container,
+  #page-content .frame-inner,
+  #page-content .frame-group-container,
+  #page-content .frame-group-inner {
+    background: transparent;
+  }
+
+  /* ---------------------------------
+     Typografie
+     --------------------------------- */
+  #page-content p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  #page-content h1,
+  #page-content h2,
+  #page-content h3,
+  #page-content .element-header {
+    color: #000000;
+    margin: 0;
+  }
+
+  #page-content h2,
+  #page-content .element-header {
+    font-size: clamp(1.7rem, 3vw, 2.6rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 800;
+  }
+
+  #page-content h1 {
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+  }
+
+  #page-content h3 {
+    font-size: 1.15rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  #page-content .frame-header {
+    margin-bottom: 1.25rem;
+  }
+
+  #page-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #page-content figure.image {
+    margin: 0;
+  }
+
+  #page-content p:empty {
+    display: none;
+  }
+
+  /* ---------------------------------
+     Hauptüberschrift
+     --------------------------------- */
+  #c149 {
+    margin-bottom: 2.25rem;
+  }
+
+  #c149 .frame-container {
+    border-bottom: 4px solid #000000;
+    padding-bottom: 0.7rem;
+  }
+
+  #c149 .element-header {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.35rem 0.75rem 0.2rem;
+    border: 2px solid #000000;
+  }
+
+  /* ---------------------------------
+     2 Spalten Grundraster
+     --------------------------------- */
+  #page-content .contentcontainer[data-container-identifier="container_2_columns"] {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #page-content .contentcontainer[data-container-identifier="container_2_columns"] .contentcontainer-column {
+    min-width: 0;
+  }
+
+  /* innere 1-column container neutral */
+  #page-content .contentcontainer[data-container-identifier="container_1_columns"] {
+    margin-bottom: 2rem;
+  }
+
+  /* ---------------------------------
+     Ausstellungskarten
+     textmedia-above = Bild oben, Text unten
+     --------------------------------- */
+  #c156,
+  #c157,
+  #c160,
+  #c161 {
+    height: 100%;
+  }
+
+  #c156 .frame-container,
+  #c157 .frame-container,
+  #c160 .frame-container,
+  #c161 .frame-container {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #c156 .frame-inner,
+  #c157 .frame-inner,
+  #c160 .frame-inner,
+  #c161 .frame-inner {
+    height: 100%;
+  }
+
+  #c156 .textmedia,
+  #c157 .textmedia,
+  #c160 .textmedia,
+  #c161 .textmedia {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #c156 .textmedia-gallery,
+  #c157 .textmedia-gallery,
+  #c160 .textmedia-gallery,
+  #c161 .textmedia-gallery {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #000000;
+  }
+
+  #c156 .gallery-row,
+  #c157 .gallery-row,
+  #c160 .gallery-row,
+  #c161 .gallery-row,
+  #c156 .gallery-item,
+  #c157 .gallery-item,
+  #c160 .gallery-item,
+  #c161 .gallery-item {
+    margin: 0;
+  }
+
+  #c156 img,
+  #c157 img,
+  #c160 img,
+  #c161 img {
+    aspect-ratio: 4 / 2.8;
+    object-fit: cover;
+  }
+
+  #c156 .textmedia-text,
+  #c157 .textmedia-text,
+  #c160 .textmedia-text,
+  #c161 .textmedia-text {
+    padding: 1.4rem 1.35rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  #c156 .textmedia-text .frame-header,
+  #c157 .textmedia-text .frame-header,
+  #c160 .textmedia-text .frame-header,
+  #c161 .textmedia-text .frame-header {
+    margin-bottom: 0.9rem;
+  }
+
+  #c156 .textmedia-text .element-header,
+  #c157 .textmedia-text .element-header,
+  #c160 .textmedia-text .element-header,
+  #c161 .textmedia-text .element-header {
+    font-size: clamp(1.2rem, 1.9vw, 1.7rem);
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 0.55rem;
+  }
+
+  #c156 .textmedia-text p:last-child,
+  #c157 .textmedia-text p:last-child,
+  #c160 .textmedia-text p:last-child,
+  #c161 .textmedia-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ---------------------------------
+     Kalender-Block
+     --------------------------------- */
+  #c189 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #c189 .frame-container {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 1.6rem;
+  }
+
+  #c189 .tx-sf-event-mgt > h1 {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.35rem 0.75rem 0.25rem;
+    border: 2px solid #000000;
+    margin-bottom: 1.5rem;
+  }
+
+  #c189 .event-calendar {
+    width: 100%;
+  }
+
+  /* Monatsnavigation */
+  #c189 .event-calendar__browser {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.25rem 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  #c189 .event-calendar__browser li {
+    margin: 0;
+  }
+
+  #c189 .event-calendar__browser-prev {
+    text-align: left;
+  }
+
+  #c189 .event-calendar__browser-current {
+    text-align: center;
+  }
+
+  #c189 .event-calendar__browser-next {
+    text-align: right;
+  }
+
+  #c189 .event-calendar__browser a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    border: 2px solid #000000;
+    padding: 0.65rem 0.85rem;
+    background: #ffffff;
+  }
+
+  #c189 .event-calendar__browser a:hover,
+  #c189 .event-calendar__browser a:focus {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  #c189 .event-calendar__browser-current h3 {
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+  }
+
+  /* Wochentage */
+  #c189 .event-calendar__weekdays {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 60px repeat(7, minmax(0, 1fr));
+    gap: 0;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+  }
+
+  #c189 .event-calendar__weekdays > li {
+    margin: 0;
+    padding: 0.8rem 0.5rem;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    min-width: 0;
+    background: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  #c189 .event-calendar__weeknumber {
+    font-weight: 700;
+  }
+
+  /* Kalenderwochen */
+  #c189 .event-calendar__days {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 60px repeat(7, minmax(0, 1fr));
+    gap: 0;
+    border-left: 2px solid #000000;
+  }
+
+  #c189 .event-calendar__days > li {
+    margin: 0;
+    min-width: 0;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    background: #ffffff;
+  }
+
+  #c189 .event-calendar__days > .event-calendar__weeknumber {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.85rem 0.35rem;
+    font-size: 0.95rem;
+    background: #f4f4f4;
+  }
+
+  #c189 .event-calendar__day {
+    min-height: 120px;
+    padding: 0.65rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #c189 .event-calendar__day-date {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #000000;
+  }
+
+  #c189 .event-calendar__day-other-month {
+    background: #f7f7f7;
+    color: #777777;
+  }
+
+  #c189 .event-calendar__day-today {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  #c189 .event-calendar__day-today .event-calendar__day-date,
+  #c189 .event-calendar__day-today a,
+  #c189 .event-calendar__day-today .event-calendar__day-event-time {
+    color: #ffffff;
+  }
+
+  #c189 .event-calendar__day.has-events {
+    background: #f3f3f3;
+  }
+
+  #c189 .event-calendar__day-event {
+    margin-top: auto;
+    border-top: 2px solid #000000;
+    padding-top: 0.5rem;
+  }
+
+  #c189 .event-calendar__day-event a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  #c189 .event-calendar__day-event a:hover,
+  #c189 .event-calendar__day-event a:focus {
+    text-decoration: underline;
+  }
+
+  #c189 .event-calendar__day-event-time {
+    margin-top: 0.35rem;
+    font-size: 0.92rem;
+    line-height: 1.35;
+    color: #1f1f1f;
+  }
+
+  /* ---------------------------------
+     Eventliste
+     --------------------------------- */
+  #c191 {
+    margin-top: 2rem;
+  }
+
+  #c191 .frame-container {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 1.6rem;
+  }
+
+  #c191 .tx-sf-event-mgt > h1 {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.35rem 0.75rem 0.25rem;
+    border: 2px solid #000000;
+    margin-bottom: 1.25rem;
+  }
+
+  #c191 a.button {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 2px solid #000000;
+    padding: 0.7rem 1rem;
+    background: #ffffff;
+  }
+
+  #c191 a.button:hover,
+  #c191 a.button:focus {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  #c191 .event-list-item {
+    border: 2px solid #000000;
+    padding: 1.25rem 1.25rem 1rem;
+    margin-bottom: 1rem;
+    background: #ffffff;
+  }
+
+  #c191 .event-list-item:last-child {
+    margin-bottom: 0;
+  }
+
+  #c191 .event-list-row {
+    margin-bottom: 0.75rem;
+  }
+
+  #c191 .event-list-row:last-child {
+    margin-bottom: 0;
+  }
+
+  #c191 .event-title {
+    margin: 0;
+    padding-bottom: 0.65rem;
+    border-bottom: 2px solid #000000;
+  }
+
+  #c191 .event-title a {
+    color: #000000;
+    text-decoration: none;
+    font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+    line-height: 1.2;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  #c191 .event-title a:hover,
+  #c191 .event-title a:focus {
+    text-decoration: underline;
+  }
+
+  #c191 .event-list-row:not(:first-child) {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
+
+  #c191 .event-list-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+
+  #c191 .event-list-value {
+    color: #1a1a1a;
+    min-width: 0;
+  }
+
+  #c191 .event-price {
+    font-weight: 700;
+  }
+
+  #c191 .event-location {
+    font-weight: 700;
+  }
+
+  #c191 .clear {
+    display: none;
+  }
+
+  /* ---------------------------------
+     Responsive
+     --------------------------------- */
+  @media (max-width: 991.98px) {
+    #page-content {
+      padding-bottom: 3rem;
+    }
+
+    #page-content .contentcontainer[data-container-identifier="container_2_columns"] {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    #page-content .contentcontainer[data-container-identifier="container_1_columns"] {
+      margin-bottom: 1.25rem;
+    }
+
+    #c189 .frame-container,
+    #c191 .frame-container {
+      padding: 1.25rem;
+    }
+
+    #c189 .event-calendar__browser {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    #c189 .event-calendar__browser-prev,
+    #c189 .event-calendar__browser-current,
+    #c189 .event-calendar__browser-next {
+      text-align: left;
+    }
+
+    #c189 .event-calendar__weekdays,
+    #c189 .event-calendar__days {
+      grid-template-columns: 46px repeat(7, minmax(0, 1fr));
+    }
+
+    #c189 .event-calendar__day {
+      min-height: 95px;
+      padding: 0.5rem;
+    }
+
+    #c191 .event-list-row:not(:first-child) {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    #c156 img,
+    #c157 img,
+    #c160 img,
+    #c161 img {
+      aspect-ratio: 4 / 3;
+    }
+
+    #c189 .event-calendar__weekdays {
+      display: none;
+    }
+
+    #c189 .event-calendar__days {
+      grid-template-columns: 1fr;
+      border-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    #c189 .event-calendar__days > .event-calendar__weeknumber {
+      border-left: 2px solid #000000;
+      justify-content: flex-start;
+      padding-left: 0.75rem;
+    }
+
+    #c189 .event-calendar__days > li {
+      border-left: 2px solid #000000;
+    }
+
+    #c189 .event-calendar__day {
+      min-height: auto;
+    }
+
+    #c189 .event-calendar__day::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #page-content p {
+      font-size: 0.96rem;
+      line-height: 1.65;
+    }
+
+    #c156 .textmedia-text,
+    #c157 .textmedia-text,
+    #c160 .textmedia-text,
+    #c161 .textmedia-text {
+      padding: 1.15rem 1rem 1rem;
+    }
+
+    #c189 .frame-container,
+    #c191 .frame-container {
+      padding: 1rem;
+    }
+
+    #c191 .event-list-item {
+      padding: 1rem;
+    }
+  }
+}

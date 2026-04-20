@@ -1,0 +1,63 @@
+.ce-aufdeckung {
+  margin: 2rem 0;
+
+  .aufdeckung-image-wrapper {
+    --x: -9999px;
+    --y: -9999px;
+    --radius: 120px;
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background: #000;
+  }
+
+  .aufdeckung-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .aufdeckung-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+                    circle var(--radius) at var(--x) var(--y),
+                    rgba(0, 0, 0, 0) 0,
+                    rgba(0, 0, 0, 0) 25%,
+                    rgba(0, 0, 0, 0.65) 45%,
+                    rgba(0, 0, 0, 0.97) 100%
+    );
+  }
+
+  .aufdeckung-text {
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 2;
+    max-width: 420px;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 0, 0, 0.82);
+    color: #fff;
+    line-height: 1.5;
+    pointer-events: none;
+  }
+
+  @media (max-width: 991.98px) {
+    .aufdeckung-image-wrapper {
+      --radius: 90px;
+      max-width: 100%;
+    }
+
+    .aufdeckung-text {
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem;
+      max-width: none;
+      font-size: 0.95rem;
+    }
+  }
+}

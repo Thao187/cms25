@@ -1,0 +1,199 @@
+/* =========================================================
+   DATENSCHUTZ – kantig / schwarz-weiß / klar
+   Navbar und Footer bleiben unberührt
+   ========================================================= */
+
+body.page-34 {
+  #page-content {
+    background: #ffffff;
+    color: #111111;
+    padding-bottom: 5rem;
+  }
+
+  /* ---------------------------------
+     Grundlayout
+     --------------------------------- */
+  #page-content > .section,
+  #page-content > .contentcontainer,
+  #page-content > .frame {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #page-content .frame,
+  #page-content .frame-group-container,
+  #page-content .frame-group-inner,
+  #page-content .frame-container,
+  #page-content .frame-inner {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  #page-content .section.section-default {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* ---------------------------------
+     Typografie
+     --------------------------------- */
+  #page-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  #page-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  #page-content a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+  }
+
+  #page-content a:hover,
+  #page-content a:focus {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* ---------------------------------
+     Gemeinsame Boxen
+     --------------------------------- */
+  #c213,
+  #c214,
+  #c215,
+  #c216 {
+    margin-bottom: 2rem;
+  }
+
+  #c213 .frame-container,
+  #c214 .frame-container,
+  #c215 .frame-container,
+  #c216 .frame-container {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 2rem;
+  }
+
+  /* ---------------------------------
+     Überschriften
+     --------------------------------- */
+  #c213 .frame-header,
+  #c214 .frame-header,
+  #c215 .frame-header,
+  #c216 .frame-header {
+    text-align: center;
+    margin-bottom: 1.4rem;
+  }
+
+  #c213 .element-header,
+  #c214 .element-header,
+  #c215 .element-header,
+  #c216 .element-header {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    padding: 0.45rem 1rem 0.3rem;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* ---------------------------------
+     Erste Box etwas kompakter / zentrierter
+     --------------------------------- */
+  #c213 .frame-container {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #c213 p {
+    text-align: center;
+  }
+
+  /* ---------------------------------
+     Weitere Boxen
+     --------------------------------- */
+  #c214 .frame-container,
+  #c215 .frame-container,
+  #c216 .frame-container {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  /* ---------------------------------
+     Verantwortlicher etwas hervorgehoben
+     --------------------------------- */
+  #c216 .frame-container {
+    max-width: 820px;
+  }
+
+  #c216 p {
+    text-align: center;
+  }
+
+  /* ---------------------------------
+     Leere Zeilen entschärfen
+     --------------------------------- */
+  #c213 p:empty,
+  #c214 p:empty,
+  #c215 p:empty,
+  #c216 p:empty {
+    display: none;
+  }
+
+  /* ---------------------------------
+     Responsive
+     --------------------------------- */
+  @media (max-width: 991.98px) {
+    #page-content {
+      padding-bottom: 3rem;
+    }
+
+    #c213 .frame-container,
+    #c214 .frame-container,
+    #c215 .frame-container,
+    #c216 .frame-container {
+      padding: 1.5rem 1.25rem;
+    }
+
+    #c213 .element-header,
+    #c214 .element-header,
+    #c215 .element-header,
+    #c216 .element-header {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #page-content p {
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    #c213 .element-header,
+    #c214 .element-header,
+    #c215 .element-header,
+    #c216 .element-header {
+      font-size: 1.45rem;
+      padding: 0.4rem 0.85rem 0.25rem;
+    }
+
+    #c213 .frame-container,
+    #c214 .frame-container,
+    #c215 .frame-container,
+    #c216 .frame-container {
+      padding: 1.2rem 1rem;
+    }
+  }
+}

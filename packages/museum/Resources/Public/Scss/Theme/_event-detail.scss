@@ -1,0 +1,443 @@
+/* =========================================================
+   EVENT DETAIL PAGES – gemeinsames SCSS für beide Detailseiten
+   Stil: kantig / schwarz-weiß / klare Rahmen
+   Gilt für:
+   - Nachtführung: Museum bei Dunkelheit
+   - Führung: Architektur und Raumwirkung
+   - sowie generell page-37 Event-Detailseiten
+   Navbar und Footer bleiben unberührt
+   ========================================================= */
+
+body.page-37 {
+  #page-content {
+    background: #ffffff;
+    color: #111111;
+    padding-bottom: 5rem;
+  }
+
+  /* ---------------------------------
+     Grundlayout
+     --------------------------------- */
+  #page-content > .section,
+  #page-content > .contentcontainer,
+  #page-content > .frame {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #page-content .section.section-default {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #page-content .frame {
+    margin-bottom: 0;
+  }
+
+  #page-content .frame-group-container,
+  #page-content .frame-group-inner,
+  #page-content .frame-container,
+  #page-content .frame-inner {
+    background: transparent;
+  }
+
+  /* ---------------------------------
+     Allgemeine Typografie
+     --------------------------------- */
+  #page-content p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  #page-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  #page-content h1,
+  #page-content h2,
+  #page-content h3 {
+    margin: 0;
+    color: #000000;
+  }
+
+  #page-content h1 {
+    font-size: clamp(1.55rem, 2.3vw, 2.2rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 800;
+  }
+
+  #page-content h2 {
+    font-size: clamp(1.15rem, 1.7vw, 1.6rem);
+    line-height: 1.15;
+    text-transform: uppercase;
+    letter-spacing: 0.035em;
+    font-weight: 800;
+  }
+
+  #page-content a {
+    color: #000000;
+  }
+
+  #page-content a:hover,
+  #page-content a:focus {
+    color: #000000;
+  }
+
+  /* ---------------------------------
+     Haupt-Wrapper
+     --------------------------------- */
+  #c190 {
+    margin-bottom: 2rem;
+  }
+
+  #c190 .frame-container {
+    border: 2px solid #000000;
+    background: #ffffff;
+    padding: 2rem;
+  }
+
+  #c190 .tx-sf-event-mgt {
+    width: 100%;
+  }
+
+  /* ---------------------------------
+     Oberer Titelblock "Event details"
+     --------------------------------- */
+  #c190 .tx-sf-event-mgt > h1 {
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    padding: 0.35rem 0.8rem 0.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ---------------------------------
+     Eventtitel-Zeile
+     --------------------------------- */
+  #c190 .event-detail-row:first-of-type {
+    display: block;
+    padding: 0 0 1.15rem 0;
+    margin-bottom: 1.2rem;
+    border-bottom: 3px solid #000000;
+  }
+
+  #c190 .event-title {
+    width: 100%;
+    font-size: clamp(1.05rem, 1.45vw, 1.45rem);
+    line-height: 1.15;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+
+    /* wichtig: NICHT umbrechen */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ---------------------------------
+     Detail-Zeilen
+     --------------------------------- */
+  #c190 .event-detail-row {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+    padding: 0.95rem 0;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  #c190 .event-detail-row:last-of-type {
+    border-bottom: none;
+  }
+
+  #c190 .event-detail-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+
+  #c190 .event-detail-value {
+    min-width: 0;
+    color: #1a1a1a;
+  }
+
+  #c190 .event-detail-value p:last-child {
+    margin-bottom: 0;
+  }
+
+  #c190 .clear {
+    display: none;
+  }
+
+  /* ---------------------------------
+     Inhaltliche Priorisierung
+     --------------------------------- */
+  #c190 .event-teaser {
+    font-size: 1.03rem;
+    line-height: 1.8;
+  }
+
+  #c190 .event-description {
+    line-height: 1.75;
+  }
+
+  #c190 .event-startdate,
+  #c190 .event-enddate,
+  #c190 .event-price,
+  #c190 .event-link {
+    font-weight: 700;
+  }
+
+  /* ---------------------------------
+     Leere Werte optisch aufräumen
+     --------------------------------- */
+  #c190 .event-detail-value:empty {
+    min-height: 0;
+  }
+
+  /* ---------------------------------
+     Unnötige Felder ausblenden
+     --------------------------------- */
+  #c190 .event-detail-row:has(.event-location-title) {
+    display: none;
+  }
+
+  #c190 .event-detail-row:has(.event-location-address) {
+    display: none;
+  }
+
+  #c190 .event-detail-row:has(.event-location-city) {
+    display: none;
+  }
+
+  #c190 .event-detail-row:has(.event-location-country) {
+    display: none;
+  }
+
+  #c190 .event-detail-row:has(.event-organisator) {
+    display: none;
+  }
+
+  #c190 .event-detail-row:has(.event-maxParticipants) {
+    display: none;
+  }
+
+  #c190 .event-detail-row:has(.event-registrations) {
+    display: none;
+  }
+
+  #c190 .event-detail-row:has(.event-freePlaces) {
+    display: none;
+  }
+
+  #c190 .event-detail-row:has(.event-link) {
+    display: none;
+  }
+
+  /* leere Description-Zeile ausblenden */
+  #c190 .event-detail-row:has(.event-description:empty) {
+    display: none;
+  }
+
+  /* leere Top-event-Zeile ausblenden
+     (im HTML hängt dort ebenfalls .event-price dran) */
+  #c190 .event-detail-row:has(.event-detail-value.event-price:empty) {
+    display: none;
+  }
+
+  /* ---------------------------------
+     Preiszeile hervorheben
+     --------------------------------- */
+  #c190 .event-detail-row:has(.event-price:not(:empty)) {
+    border-top: 2px solid #000000;
+    margin-top: 0.35rem;
+    padding-top: 1rem;
+  }
+
+  #c190 .event-detail-row:has(.event-price:not(:empty)) .event-detail-label {
+    font-size: 0.95rem;
+  }
+
+  #c190 .event-detail-row:has(.event-price:not(:empty)) .event-price {
+    font-size: 1.15rem;
+    font-weight: 800;
+  }
+
+  /* ---------------------------------
+     Link-Zeile
+     --------------------------------- */
+  #c190 .event-link {
+    display: inline-block;
+  }
+
+  /* ---------------------------------
+     Buttons allgemein
+     --------------------------------- */
+  #c190 a.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+    border: 2px solid #000000;
+    padding: 0.8rem 1rem;
+    min-height: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition: none;
+  }
+
+  #c190 a.button:hover,
+  #c190 a.button:focus {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /* ---------------------------------
+     Back-to-list Button
+     --------------------------------- */
+  #c190 .tx-sf-event-mgt > a.button {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ---------------------------------
+     Add to calendar Bereich
+     --------------------------------- */
+  #c190 .tx-sf-event-mgt > div:last-child {
+    border-top: 2px solid #000000;
+    padding-top: 1.4rem;
+    margin-top: 0.5rem;
+  }
+
+  #c190 .tx-sf-event-mgt > div:last-child br {
+    display: none;
+  }
+
+  #c190 .tx-sf-event-mgt > div:last-child strong {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
+
+  #c190 .tx-sf-event-mgt > div:last-child ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  #c190 .tx-sf-event-mgt > div:last-child li {
+    margin: 0;
+  }
+
+  #c190 .tx-sf-event-mgt > div:last-child li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 54px;
+    padding: 0.8rem 1rem;
+    border: 2px solid #000000;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  #c190 .tx-sf-event-mgt > div:last-child li a:hover,
+  #c190 .tx-sf-event-mgt > div:last-child li a:focus {
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /* ---------------------------------
+     Optische Feinheiten
+     --------------------------------- */
+  #c190 .event-detail-row:has(.event-teaser) {
+    padding-top: 0;
+  }
+
+  #c190 .event-detail-row:has(.event-description:not(:empty)) {
+    background: transparent;
+  }
+
+  #c190 .event-detail-row:has(.event-startdate),
+  #c190 .event-detail-row:has(.event-enddate) {
+    background: transparent;
+  }
+
+  /* ---------------------------------
+     Responsive
+     --------------------------------- */
+  @media (max-width: 991.98px) {
+    #page-content {
+      padding-bottom: 3rem;
+    }
+
+    #c190 .frame-container {
+      padding: 1.4rem 1.2rem;
+    }
+
+    #c190 .event-detail-row {
+      grid-template-columns: 1fr;
+      gap: 0.35rem;
+      padding: 0.8rem 0;
+    }
+
+    #c190 .event-detail-label {
+      margin-bottom: 0.1rem;
+    }
+
+    #c190 .tx-sf-event-mgt > div:last-child ul {
+      grid-template-columns: 1fr;
+    }
+
+    #c190 .event-title {
+      font-size: clamp(0.98rem, 2.5vw, 1.2rem);
+      letter-spacing: 0.02em;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #page-content p {
+      font-size: 0.96rem;
+      line-height: 1.65;
+    }
+
+    #c190 .frame-container {
+      padding: 1rem;
+    }
+
+    #c190 a.button,
+    #c190 .tx-sf-event-mgt > div:last-child li a {
+      width: 100%;
+    }
+
+    #c190 .event-title {
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+    }
+  }
+}
