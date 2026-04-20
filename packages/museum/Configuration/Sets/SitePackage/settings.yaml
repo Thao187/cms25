@@ -1,0 +1,29 @@
+plugin:
+  bootstrap_package:
+    settings:
+      scss:
+        primary: '#eb3e4a'
+        secondary: '#013859'
+    view:
+      layoutRootPath: 'EXT:museum/Resources/Private/Layouts/'
+      partialRootPath: 'EXT:museum/Resources/Private/Partials/'
+      templateRootPath: 'EXT:museum/Resources/Private/Templates/'
+  bootstrap_package_contentelements:
+    view:
+      layoutRootPath: 'EXT:museum/Resources/Private/Layouts/ContentElements/'
+      partialRootPath: 'EXT:museum/Resources/Private/Partials/ContentElements/'
+      templateRootPath: 'EXT:museum/Resources/Private/Templates/ContentElements/'
+page:
+  logo:
+    file: 'EXT:museum\Resources\Public\Icons\Logoklein.png'
+    fileInverted: 'EXT:museum\Resources\Public\Icons\Logoklein.png'
+    width: 192
+    alt: 'My Site Package'
+    linktitle: 'My Site Package'
+  favicon:
+    file: 'EXT:museum\Resources\Public\Icons\Logoklein.png'
+  fluidtemplate:
+    layoutRootPath: 'EXT:museum/Resources/Private/Layouts/Page/'
+    partialRootPath: 'EXT:museum/Resources/Private/Partials/Page/'
+    templateRootPath: 'EXT:museum/Resources/Private/Templates/Page/'
+

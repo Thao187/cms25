@@ -1,0 +1,21 @@
+{
+    "name": "fh-ooe/museum",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://fh-ooe.at",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "bk2k/bootstrap-package": "^15.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FhOoe\\Museum\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "museum"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <section class="hscroll-downloads">
+        <div class="hscroll-downloads__track">
+            <f:for each="{data.tx_mask_hscroll_items}" as="item">
+                <div class="hscroll-downloads__item">
+
+                    <f:if condition="{item.tx_mask_hscroll_preview_image.0}">
+                        <div class="hscroll-downloads__image">
+                            <f:image image="{item.tx_mask_hscroll_preview_image.0}" alt="{item.tx_mask_hscroll_title}" />
+                        </div>
+                    </f:if>
+
+                    <f:if condition="{item.tx_mask_hscroll_title}">
+                        <h3 class="hscroll-downloads__title">
+                            {item.tx_mask_hscroll_title}
+                        </h3>
+                    </f:if>
+
+                    <f:if condition="{item.tx_mask_hscroll_download_link}">
+                        <a class="hscroll-downloads__button"
+                           href="{item.tx_mask_hscroll_download_link}"
+                           download>
+                            <f:if condition="{item.tx_mask_hscroll_button_label}">
+                                <f:then>{item.tx_mask_hscroll_button_label}</f:then>
+                                <f:else>Download</f:else>
+                            </f:if>
+                        </a>
+                    </f:if>
+
+                </div>
+            </f:for>
+        </div>
+    </section>
+</f:section>

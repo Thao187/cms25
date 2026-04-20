@@ -1,0 +1,23 @@
+@import './PageTsConfig/BackendLayouts/'
+
+RTE {
+    default {
+        preset = museum
+    }
+}
+
+TCEFORM {
+    pages {
+
+    }
+    tt_content {
+        layout.addItems.10 = ---------
+        layout.addItems.11 = ContactCard
+
+
+    }
+}
+
+TCEMAIN {
+
+}

@@ -1,0 +1,54 @@
+@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/Styles/Twb5/setup.typoscript'
+@import 'EXT:sf_event_mgt/Configuration/TypoScript/setup.typoscript'
+
+config.contentObjectExceptionHandler=0
+page {
+    includeCSS {
+        theme = EXT:museum/Resources/Public/Scss/Theme/theme.scss
+        eventsDefault = EXT:sf_event_mgt/Resources/Public/Css/events_default.css
+        css = https://use.fontawesome.com/releases/v6.4.2/css/all.css
+        css {
+            external = 1
+            media = all
+            excludeFromConcatenation = 1
+        }
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        museum_scripts = EXT:museum/Resources/Public/JavaScript/main.js
+    }
+}
+
+lib.maskContentElement {
+    templateRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements
+    }
+    partialRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements
+    }
+    layoutRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements
+    }
+}
+lib.contentElement {
+    templateRootPaths.10 = EXT:muesum/Resources/Private/Templates/ContentElements/
+    partialRootPaths.10 = EXT:muesum/Resources/Private/Partials/ContentElements/
+    layoutRootPaths.10 = EXT:muesum/Resources/Private/Layouts/ContentElements/
+}
+
+
+

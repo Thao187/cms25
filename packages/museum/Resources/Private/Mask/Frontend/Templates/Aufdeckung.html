@@ -1,0 +1,30 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <f:if condition="{data.tx_mask_foto}">
+        <div class="ce-aufdeckung js-aufdeckung">
+            <div class="aufdeckung-image-wrapper">
+
+                <f:image
+                    image="{data.tx_mask_foto.0}"
+                    alt="{data.tx_mask_fototext}"
+                    class="aufdeckung-image"
+                />
+
+                <div class="aufdeckung-overlay"></div>
+
+                <f:if condition="{data.tx_mask_fototext}">
+                    <div class="aufdeckung-text">
+                        {data.tx_mask_fototext}
+                    </div>
+                </f:if>
+
+            </div>
+        </div>
+    </f:if>
+</f:section>
+</html>

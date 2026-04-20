@@ -1,0 +1,4 @@
+name: fh-ooe/museum
+label: 'Museum'
+dependencies:
+  - bootstrap-package/full
